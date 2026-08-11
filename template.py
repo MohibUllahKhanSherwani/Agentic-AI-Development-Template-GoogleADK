@@ -14,6 +14,7 @@ structure = {
         "dockerfile",
         ".dockerignore",
         "pyproject.toml",
+        "README.md",
     ],
 
     "Config": [
