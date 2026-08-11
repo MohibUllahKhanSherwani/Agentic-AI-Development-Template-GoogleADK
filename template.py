@@ -7,61 +7,78 @@ PROJECT_NAME = "VendorContractRegistrationAndOnboarding"
 structure = {
     ".": [
         ".env",
+        ".env.example",
+        ".gitignore",
         "main.py",
         "requirements.txt",
         "dockerfile",
         ".dockerignore",
-        "pyproject.toml"
+        "pyproject.toml",
     ],
+
     "Config": [
-        "Config.yaml"
+        "Config.yaml",
     ],
+
     f"src/{PROJECT_NAME}": [
-        "__init__.py"
+        "__init__.py",
     ],
+
     f"src/{PROJECT_NAME}/configurations": [
         "__init__.py",
         "configure.py",
-        "configuration_manager.py"
+        "configuration_manager.py",
     ],
+
     f"src/{PROJECT_NAME}/Agents": [
-        "__init__.py"
+        "__init__.py",
     ],
+
     f"src/{PROJECT_NAME}/Agents/Prompts": [
-        "__init__.py"
+        "__init__.py",
     ],
+
     f"src/{PROJECT_NAME}/Agents/agents_dir": [
-            "__init__.py"
-        ],
+        "__init__.py",
+    ],
+
     f"src/{PROJECT_NAME}/Agents/tools": [
-        "__init__.py"
+        "__init__.py",
     ],
+
     f"src/{PROJECT_NAME}/Agents/formatters": [
-        "__init__.py"
+        "__init__.py",
     ],
+
     f"src/{PROJECT_NAME}/Agents/Pipelines": [
-        "__init__.py"
+        "__init__.py",
     ],
+
     f"src/{PROJECT_NAME}/utils": [
         "__init__.py",
-        "utilities.py"
+        "utilities.py",
     ],
+
     f"src/{PROJECT_NAME}/MongoHandler": [
         "__init__.py",
-        "Handler.py"
+        "Handler.py",
     ],
+
     f"src/{PROJECT_NAME}/DTOs": [
-        "__init__.py"
+        "__init__.py",
     ],
+
     f"src/{PROJECT_NAME}/Repositories": [
-        "__init__.py"
+        "__init__.py",
     ],
+
     f"src/{PROJECT_NAME}/Services": [
-        "__init__.py"
+        "__init__.py",
     ],
+
     f"src/{PROJECT_NAME}/Controllers": [
-        "__init__.py"
-    ]
+        "__init__.py",
+    ],
 }
 
 
@@ -73,8 +90,8 @@ def create_structure():
             file_path = os.path.join(folder, file)
 
             if not os.path.exists(file_path):
-                with open(file_path, "w") as f:
-                    if file.endswith("__init__.py"):
+                with open(file_path, "w", encoding="utf-8") as f:
+                    if file == "__init__.py":
                         f.write("# Package initializer\n")
                     else:
                         f.write("")
