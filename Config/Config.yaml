@@ -1,0 +1,21 @@
+Root:
+  app_name: AIPoweredHRMandRecruitmentSystem
+
+ConversationConfig:
+  conversational_history_db: data/chat.db
+
+ContentConfig:
+  max_output_tokens: 2048
+  temperature: 0.2
+  thinking:
+    max_output_tokens: 512
+    include_thoughts: false
+
+LLmConfig:
+  model_name: 
+    model_1: gemini-2.5-flash-lite
+    model_2: gemini-2.5-flash
+  description: AI Powered Vendor Registration and Onboarding
+
+SessionConfig:
+  max_messages: 20

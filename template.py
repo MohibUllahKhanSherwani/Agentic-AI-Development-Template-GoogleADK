@@ -1,7 +1,7 @@
 import os
 
 # Root project name
-PROJECT_NAME = "VendorContractRegistrationAndOnboarding"
+PROJECT_NAME = "VendorRegistrationAndOnboarding"
 
 # Directory structure
 structure = {

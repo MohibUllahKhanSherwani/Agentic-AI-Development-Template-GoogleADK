@@ -1,0 +1,5 @@
+google-adk
+pydantic
+pydantic[email]
+PyYAML
+-e.
